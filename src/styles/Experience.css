@@ -1,0 +1,142 @@
+/* Experience / Trayectoria section */
+.experience {
+  padding: 3.5rem 1rem;
+  background: linear-gradient(180deg, #0f1724 0%, #0b1220 100%); /* sober, deep slate */
+  color: #f7fafc;
+}
+
+.experience .container {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.section-title {
+  font-size: 60px;
+  text-align: center;
+  color: #e6eef8;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  padding-left: 30px;
+}
+
+.experience-plate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 2rem;
+}
+
+.experience-ring {
+  position: relative;
+  width: clamp(280px, 60vw, 560px);
+  height: clamp(280px, 60vw, 560px);
+  --radius: clamp(250px, 10vw, 20px); /* distance from center to logos */
+  /* offset the whole ring horizontally; negative = move left, positive = move right */
+  --ring-offset: -11%;
+  transform: translateX(var(--ring-offset));
+}
+
+.logo-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center center;
+  transition: transform 220ms cubic-bezier(.2,.9,.2,1);
+  outline: none;
+}
+
+.logo-item:focus {
+  z-index: 6;
+}
+
+.logo-circle {
+  /* slightly reduced size per request (smaller than before) */
+  width: clamp(72px, 12.5vw, 140px);
+  height: clamp(72px, 12.5vw, 140px);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff; /* neutral white so all logos look consistent */
+  box-shadow: 0 8px 20px rgba(2,6,23,0.55);
+  transition: transform 220ms cubic-bezier(.2,.9,.2,1), box-shadow 220ms;
+}
+
+.logo-circle img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-item:focus .logo-circle,
+.logo-item:hover .logo-circle {
+  transform: scale(1.14);
+  box-shadow: 0 18px 36px rgba(2,6,23,0.6);
+  z-index: 5;
+}
+
+.experience-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* small configurable offsets: positive X moves right, positive Y moves down */
+  --center-offset-x: 70px;
+  --center-offset-y: 30px;
+  transform: translate(calc(-50% + var(--center-offset-x)), calc(-50% + var(--center-offset-y)));
+  width: 46%;
+  max-width: 320px;
+  text-align: center;
+  pointer-events: none; /* don't block logo hover */
+}
+
+.experience-center .lead {
+  margin: 0 0 0.45rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: clamp(1rem, 2.4vw, 1.25rem);
+}
+
+.experience-center .muted {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(230,238,248,0.85);
+}
+
+/* On small screens, switch to grid for readability */
+@media (max-width: 560px) {
+  .experience-ring {
+    width: 100%;
+    height: auto;
+    --radius: 0;
+    /* on small screens we cancel the horizontal offset so grid stays centered */
+    --ring-offset: 0;
+    transform: translateX(var(--ring-offset));
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding: 1rem 0 2rem;
+  }
+
+  .logo-item {
+    position: static;
+    transform: none !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .experience-center {
+    position: static;
+    transform: none;
+    width: 100%;
+    grid-column: 1 / -1;
+    margin-top: 0.6rem;
+  }
+
+  .logo-circle {
+    width: 84px;
+    height: 84px;
+  }
+}

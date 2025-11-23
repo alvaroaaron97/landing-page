@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import NavBar from './components/NavBar';
+import Carousel from './components/Carousel';
+import ProjectCards from './components/ProjectCard';
+import Experience from './components/Experience';
+import Services from './components/Services';
+import ContactForm from './components/ContactForm';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <div>
+      <NavBar />
+      <Carousel />
+      <div className="container my-5">
+        <ProjectCards />
+      </div>
+
+      {/* Experience is full-bleed (background spans full viewport) */}
+      <Experience />
+
+      <div className="container my-5">
+        <Services />
+      </div>
+
+      {/* Contact form full-bleed (background spans full viewport) */}
+      <ContactForm />
+    </div>
+         
     </div>
   );
 }

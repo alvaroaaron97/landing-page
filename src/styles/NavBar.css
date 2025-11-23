@@ -1,0 +1,15 @@
+
+
+.navbar-brand img {
+    height: 100px; /* Cambia el tamaño del logo */
+  }
+  
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+  }

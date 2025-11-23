@@ -24,6 +24,32 @@
   color: white;
 }
 
+.featured-title {
+  display: flex; /* Usamos flexbox para centrar el título y las líneas */
+  align-items: center; /* Alineamos verticalmente los elementos */
+  justify-content: center; /* Centramos el contenido horizontalmente */
+  color: #4b758a!important; /* Color del texto */
+  font-size: 1.5rem; /* Tamaño del texto */
+  margin-bottom: 2rem; /* Espacio inferior */
+  position: relative; /* Posicionamiento para usar pseudo-elementos */
+}
+
+/* Línea decorativa a la izquierda del título */
+.featured-title::before,
+.featured-title::after {
+  content: ''; /* Necesario para pseudo-elementos */
+  flex: 1; /* Ocupa el espacio disponible */
+  height: 3px; /* Grosor de las líneas */
+  background-color: #4b758a; /* Color de las líneas (puedes cambiarlo) */
+  margin: 0 10px; /* Espacio entre las líneas y el texto */
+}
+
+/* Línea decorativa a la derecha del título */
+.featured-title::after {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
 .App-link {
   color: #61dafb;
 }
