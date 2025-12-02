@@ -4,7 +4,7 @@ import logoStanm from '../assets/logo-stanm.png';
 
 function AboutUs() {
   return (
-    <section className="about-section" aria-labelledby="about-title">
+    <section className="about-section" id="quienes-somos" aria-labelledby="about-title">
       <div className="about-container">
         <h2 id="about-title" className="about-title">Sobre Nosotros</h2>
         <article className="about-main" aria-label="Sobre STAN Multidisciplina">
@@ -22,21 +22,35 @@ function AboutUs() {
             </div>
           </div>
         </article>
-        <div className="about-columns">
-          <article className="about-card mission" aria-labelledby="mission-title">
-            <h3 id="mission-title">Misión</h3>
-            <p>
-              Entregamos soluciones en ingeniería, procesos y gestión de proyectos con fuerte experiencia en minería.
-              Nos mueve hacer las cosas bien, en equipo y con mirada de largo plazo.
-            </p>
+        <div className="about-columns about-columns-vertical">
+          <article className="about-card mission mission-horizontal" id="mision" aria-labelledby="mission-title">
+            <div className="mission-flex">
+              <div className="mission-text">
+                <h3 id="mission-title">Misión</h3>
+                <p>
+                  Entregamos soluciones en ingeniería, procesos y gestión de proyectos con fuerte experiencia en minería.
+                  Nos mueve hacer las cosas bien, en equipo y con mirada de largo plazo.
+                </p>
+              </div>
+              <div className="mission-image-container">
+                <img src={require('../assets/mision-imagen.png')} alt="Misión" className="mission-image" />
+              </div>
+            </div>
           </article>
 
-          <article className="about-card vision" aria-labelledby="vision-title">
-            <h3 id="vision-title">Visión</h3>
-            <p>
-              Queremos crecer junto a nuestros clientes, dejando huella por cómo trabajamos y por los resultados que logramos.
-              Buscamos llevar la minería y la industria a un nuevo nivel con soluciones simples, efectivas y hechas con sentido.
-            </p>
+          <article className="about-card vision vision-horizontal" id="vision" aria-labelledby="vision-title">
+            <div className="vision-flex">
+              <div className="vision-image-container">
+                <img src={require('../assets/vision-imagen.png')} alt="Visión" className="vision-image" />
+              </div>
+              <div className="vision-text">
+                <h3 id="vision-title">Visión</h3>
+                <p>
+                  Queremos crecer junto a nuestros clientes, dejando huella por cómo trabajamos y por los resultados que logramos.
+                  Buscamos llevar la minería y la industria a un nuevo nivel con soluciones simples, efectivas y hechas con sentido.
+                </p>
+              </div>
+            </div>
           </article>
         </div>
       </div>

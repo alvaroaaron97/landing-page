@@ -1,3 +1,127 @@
+.mission-horizontal .mission-flex {
+  flex-direction: row;
+}
+/* Mission horizontal layout (igual que vision) */
+.mission-horizontal .mission-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.mission-horizontal .mission-image-container {
+  flex: 1 1 0;
+  width: 50%;
+  height: 100%;
+  min-height: 340px;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.mission-horizontal .mission-image {
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px rgba(16,160,120,0.18);
+  background: #fff;
+}
+
+.mission-horizontal .mission-text {
+  flex: 1 1 0;
+  width: 50%;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 32px;
+}
+
+@media (max-width: 900px) {
+  .mission-horizontal .mission-flex {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .mission-horizontal .mission-image-container,
+  .mission-horizontal .mission-text {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    min-height: 0;
+  }
+  .mission-horizontal .mission-image {
+    width: 120px;
+    height: 120px;
+    max-width: 140px;
+    max-height: 140px;
+  }
+}
+/* Vision horizontal layout */
+.vision-horizontal .vision-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.vision-horizontal .vision-image-container {
+  flex: 1 1 0;
+  width: 50%;
+  height: 100%;
+  min-height: 340px;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.vision-horizontal .vision-image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px rgba(60,120,200,0.18);
+  background: #fff;
+}
+
+.vision-horizontal .vision-text {
+  flex: 1 1 0;
+  width: 50%;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+@media (max-width: 900px) {
+  .vision-horizontal .vision-flex {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .vision-horizontal .vision-image-container,
+  .vision-horizontal .vision-text {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    min-height: 0;
+  }
+  .vision-horizontal .vision-image {
+    width: 120px;
+    height: 120px;
+    max-width: 140px;
+    max-height: 140px;
+  }
+}
 /* About Us section styles */
 .about-title {
   font-size: clamp(2rem, 4.0vw, 2.8rem);
@@ -26,11 +150,18 @@
 /* Full-bleed decorative line that appears under the title and spans the viewport */
 
 
+
 .about-columns {
   display: flex;
   gap: 24px;
-  align-items: stretch; /* make children same height */
+  align-items: stretch;
   margin-top: 8px;
+}
+
+/* Vertical stack for mission and vision */
+.about-columns-vertical {
+  flex-direction: column;
+  gap: 32px;
 }
 
 /* Main top card above mission/vision */
@@ -155,16 +286,35 @@
 .about-card {
   flex: 1 1 0;
   display: flex;
-  flex-direction: column; /* allow p to stretch */
+  flex-direction: column;
   justify-content: flex-start;
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   padding: 30px 26px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(2,6,23,0.06);
   position: relative;
-  min-height: 220px; /* ensure base size */
+  min-height: 220px;
   transition: transform 260ms cubic-bezier(.2,.8,.2,1), box-shadow 260ms cubic-bezier(.2,.8,.2,1);
   will-change: transform;
+  align-items: center;
+}
+
+/* Vision image styles */
+.vision-image-container {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vision-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(60,120,200,0.13);
+  background: #fff;
 }
 
 .about-card h3 {
@@ -183,24 +333,7 @@
   flex: 1; /* expand to keep cards same height */
 }
 
-/* Hover/Focus animation: only for devices that support hover/pointer to avoid issues on touch */
-@media (hover: hover) and (pointer: fine) {
-  .about-card:hover,
-  .about-card:focus-within {
-    transform: translateY(-8px) scale(1.035);
-    box-shadow: 0 18px 46px rgba(2,6,23,0.12);
-  }
-}
-
-/* Keyboard accessibility: visible focus outline */
-.about-card:focus-within {
-  outline: none;
-}
-.about-card:focus-visible {
-  box-shadow: 0 18px 46px rgba(2,6,23,0.12);
-  transform: translateY(-6px) scale(1.02);
-  border-radius: 12px;
-}
+/* Se eliminó el efecto hover/focus de las tarjetas */
 
 /* Decorative accent bar / badge on the top-left to add character */
 .about-card::before {

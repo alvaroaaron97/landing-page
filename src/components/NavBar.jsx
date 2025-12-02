@@ -23,13 +23,16 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#inicio">Inicio</a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" href="#quienes-somos">Quiénes Somos</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#mision">Misión</a>
+              <a className="nav-link" href="#mision">Misión y Visión</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#servicios">Servicios</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#contacto">Contacto</a>

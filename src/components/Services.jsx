@@ -90,7 +90,7 @@ export default function Services() {
   };
 
   return (
-    <section className="services-section" aria-labelledby="services-title">
+    <section className="services-section" id="servicios" aria-labelledby="services-title">
       <div className="services-container">
         <h3 id="services-title" className="services-title">Servicios</h3>
 

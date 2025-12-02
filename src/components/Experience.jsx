@@ -17,7 +17,7 @@ const LOGOS = [
 
 export default function Experience() {
   return (
-    <section className="experience" aria-labelledby="experience-title">
+    <section className="experience" id="experiencia" aria-labelledby="experience-title">
       <div className="container">
         <h2 id="experience-title" className="section-title">Experiencia</h2>
       </div>

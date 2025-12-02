@@ -79,7 +79,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="contact-section" aria-labelledby="contact-title">
+    <section className="contact-section" id="contacto" aria-labelledby="contact-title">
       <div className="contact-container">
         <h3 id="contact-title" className="contact-title">Contacto</h3>
 
