@@ -1,3 +1,86 @@
+@media (max-width: 560px) {
+  .services-title {
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+    margin-bottom: 0.5rem;
+    text-align: center;
+    word-break: break-word;
+  }
+  .services-track {
+    flex-direction: column;
+    gap: 18px;
+    padding: 8px 0;
+  }
+  .service-slide {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .service-card {
+    min-height: 180px;
+    padding: 16px 8px;
+    gap: 6px;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    box-shadow: 0 8px 24px rgba(2,6,23,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .service-icon-img, .service-icon svg {
+    width: 44px !important;
+    height: 44px !important;
+    margin-bottom: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service-title {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    margin-bottom: 0.2rem;
+    text-align: center;
+    word-break: break-word;
+    width: 100%;
+    display: block;
+  }
+  .service-subtitle {
+    font-size: 0.98rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+}
+.service-icon-img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 320px;
+}
+
+.service-title {
+  min-height: 48px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+}
 /* Services carousel styles */
 .services-section {
   padding: 36px 20px 56px;
@@ -10,11 +93,12 @@
 }
 
 .services-title {
-  font-size: clamp(1.15rem, 2.2vw, 1.6rem);
-  margin: 0 0 18px 0;
-  font-weight: 700;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 0 0 28px 0;
+  font-weight: 800;
   text-align: center;
   color: #4b758a;
+  letter-spacing: -0.01em;
 }
 
 .services-carousel {

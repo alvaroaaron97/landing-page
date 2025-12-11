@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Carousel.css';
+
 import carousel1 from '../assets/carousel1.jpg';
 import carousel2 from '../assets/carousel2.jpg';
 import carousel3 from '../assets/carousel3.jpg';
+import diagrama from '../assets/diagrama.jpg';
 
 
 
 const Carousel = () => {
-    const images = [carousel1, carousel2, carousel3]; // Lista de imágenes
+    const images = [carousel1, carousel2, carousel3, diagrama]; // Lista de imágenes
     const [currentIndex, setCurrentIndex] = useState(0); // Índice de la imagen actual
   
     // Función para cambiar de imagen automáticamente
@@ -23,7 +25,7 @@ const Carousel = () => {
         <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="carousel-image" />
 
     <div className="carousel-title" role="group" aria-label="Carousel heading">
-      <h1>Ingeniería con propósito: soluciones que transforman la minería e industria
+      <h1>Ingeniería con propósito, soluciones que transforman la minería e industria.
       </h1>
     </div>
       </div>

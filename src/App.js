@@ -1,7 +1,9 @@
 
+
 import NavBar from './components/NavBar';
 import Carousel from './components/Carousel';
 import ProjectCards from './components/ProjectCard';
+import Valores from './components/Valores';
 import Experience from './components/Experience';
 import Services from './components/Services';
 import ContactForm from './components/ContactForm';
@@ -13,9 +15,12 @@ function App() {
     <div>
       <NavBar />
       <Carousel />
+
       <div className="container my-5">
         <ProjectCards />
       </div>
+
+      <Valores />
 
       {/* Experience is full-bleed (background spans full viewport) */}
       <Experience />

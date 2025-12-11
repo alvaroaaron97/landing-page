@@ -14,10 +14,8 @@ function AboutUs() {
             </div>
             <div className="about-main-copy">
               <p>
-                STAN Multidisciplina es una empresa de ingeniería dedicada a entregar soluciones integrales en
-                ingeniería, procesos y gestión de proyectos, con amplia experiencia en el sector minero e industrial.
-                Nos caracteriza la calidad, el compromiso y la mirada de largo plazo, trabajando siempre en equipo y
-                con enfoque en las verdaderas necesidades del cliente.
+                EMPRESA DE SERVICIOS PROFESIONALES MULTIDISCIPLINARIOS, DESARROLLO DE INGENIERÍA, ESTUDIO Y GESTIÓN DE DATOS,
+                OPTIMIZACIÓN DE PROCESOS, EXPERIENCIA EN GESTIÓN DE PROYECTOS INDUSTRIALES - MINEROS.
               </p>
             </div>
           </div>

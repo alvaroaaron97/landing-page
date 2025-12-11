@@ -1,0 +1,70 @@
+/* Valores section styles */
+.valores-section {
+  background: #f7f8fa;
+  padding: 56px 0 48px 0;
+}
+
+.valores-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+
+
+.valores-title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  text-align: center;
+  margin: 0 0 18px 0;
+  font-weight: 700;
+  color: #3f5a86;
+  position: relative;
+}
+
+.valores-cards {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.valor-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(60,120,200,0.08);
+  padding: 32px 24px;
+  max-width: 340px;
+  min-width: 260px;
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.valor-card:hover {
+  box-shadow: 0 12px 32px rgba(60,120,200,0.16);
+}
+.valor-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1a7092ee;
+  margin-bottom: 16px;
+}
+.valor-card-text {
+  font-size: 1.08rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .valores-cards {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .valor-card {
+    max-width: 100%;
+    min-width: 0;
+  }
+}

@@ -12,12 +12,13 @@
 }
 
 .section-title {
-  font-size: 60px;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
   text-align: center;
   color: #e6eef8;
   margin-bottom: 1rem;
   font-weight: 700;
   padding-left: 30px;
+  letter-spacing: -0.01em;
 }
 
 .experience-plate {
@@ -109,15 +110,33 @@
 @media (max-width: 560px) {
   .experience-ring {
     width: 100%;
+    min-width: 0;
     height: auto;
     --radius: 0;
-    /* on small screens we cancel the horizontal offset so grid stays centered */
     --ring-offset: 0;
-    transform: translateX(var(--ring-offset));
+    transform: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
     padding: 1rem 0 2rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .experience-ring {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .experience-ring > .logo-item:nth-child(4) {
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    justify-self: start;
+    margin-left: -60px;
+  }
+  .experience-ring > .logo-item:nth-child(5) {
+    grid-column: 3 / span 1;
+    grid-row: 2;
+    justify-self: start;
+    margin-left: -60px;
   }
 
   .logo-item {
@@ -125,6 +144,9 @@
     transform: none !important;
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
   }
 
   .experience-center {
@@ -133,10 +155,25 @@
     width: 100%;
     grid-column: 1 / -1;
     margin-top: 0.6rem;
+    z-index: 2;
+    background: none;
+    padding: 0;
   }
 
   .logo-circle {
-    width: 84px;
-    height: 84px;
+    width: 72px;
+    height: 72px;
+    min-width: 0;
+    min-height: 0;
+    box-shadow: 0 4px 12px rgba(2,6,23,0.18);
   }
+@media (max-width: 560px) {
+  .section-title {
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    text-align: center;
+    word-break: break-word;
+  }
+}
 }

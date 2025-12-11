@@ -46,7 +46,6 @@ export default function Experience() {
 
           <div className="experience-center" aria-hidden="false">
             <p className="lead">Más de 17 años de experiencia liderando proyectos eléctricos, industriales y mineros</p>
-            <p className="muted">Experiencia comprobada en terreno. Ingeniería con visión y resultados.</p>
           </div>
         </div>
       </div>
