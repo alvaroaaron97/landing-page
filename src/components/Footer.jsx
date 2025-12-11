@@ -20,10 +20,10 @@ export default function Footer() {
           <h4>Links rápidos</h4>
           <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#quienes-somos">Sobre Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
         {/* Contacto */}
