@@ -1,6 +1,7 @@
 
 
 import NavBar from './components/NavBar';
+import WhatsAppWidget from './components/WhatsAppWidget';
 import Carousel from './components/Carousel';
 import ProjectCards from './components/ProjectCard';
 import Valores from './components/Valores';
@@ -34,6 +35,7 @@ function App() {
 
       {/* Footer siempre visible al final */}
       <Footer />
+      <WhatsAppWidget />
     </div>
   );
 }

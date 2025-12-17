@@ -26,8 +26,8 @@ function AboutUs() {
               <div className="mission-text">
                 <h3 id="mission-title">Misión</h3>
                 <p>
-                  Entregamos soluciones en ingeniería, procesos y gestión de proyectos con fuerte experiencia en minería.
-                  Nos mueve hacer las cosas bien, en equipo y con mirada de largo plazo.
+                  Entregar soluciones en ingeniería, procesos y gestión de proyectos multidisciplinarios.
+                  Actuar siempre como "OWNER" del requerimiento.
                 </p>
               </div>
               <div className="mission-image-container">

@@ -72,9 +72,9 @@
 }
 
 .btn-primary {
-  background: transparent; /* sober button */
-  color: #f8fbff;
-  border: 1px solid rgba(255,255,255,0.12);
+  background: #fff;
+  color: #15233f;
+  border: 1.5px solid #15233f;
   padding: 10px 18px;
   border-radius: 8px;
   cursor: pointer;

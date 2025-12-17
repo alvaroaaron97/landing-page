@@ -38,7 +38,7 @@ export default function Footer() {
         {/* Redes sociales */}
         <div className="footer-col footer-social">
           <h4>Síguenos</h4>
-          <a href="https://www.linkedin.com/company/stanm/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/company/stanm/?viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <img src={linkedinIcon} alt="LinkedIn" className="footer-social-img" />
           </a>
         </div>

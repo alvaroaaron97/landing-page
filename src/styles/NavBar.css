@@ -1,5 +1,33 @@
 
+/* Layout principal: logo a la izquierda, menú/hamburguesa a la derecha */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+}
 
+.navbar-brand {
+  margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  margin-left: 1rem;
+  margin-right: 12px;
+  z-index: 10;
+}
+
+.navbar-collapse {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+
+/* Logo más pequeño y alineado */
+/* Logo grande como antes */
 .navbar-brand img {
   height: 140px;
   max-width: 340px;
