@@ -1,0 +1,74 @@
+:root {
+  --maintenance-bg-1: #07111f;
+  --maintenance-bg-2: #0e1f33;
+  --maintenance-card: rgba(255, 255, 255, 0.08);
+  --maintenance-border: rgba(255, 255, 255, 0.14);
+  --maintenance-text: #f4f7fb;
+  --maintenance-muted: rgba(244, 247, 251, 0.78);
+  --maintenance-accent: #4b758a;
+}
+
+.maintenance-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top, rgba(75, 117, 138, 0.22), transparent 35%),
+    linear-gradient(160deg, var(--maintenance-bg-1), var(--maintenance-bg-2));
+}
+
+.maintenance-card {
+  width: min(720px, 100%);
+  padding: 48px 32px;
+  border: 1px solid var(--maintenance-border);
+  border-radius: 28px;
+  background: var(--maintenance-card);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+.maintenance-logo {
+  width: min(260px, 70vw);
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+.maintenance-kicker {
+  margin: 0 0 10px;
+  color: var(--maintenance-accent);
+  font-size: 0.95rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.maintenance-title {
+  margin: 0;
+  color: var(--maintenance-text);
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.maintenance-text {
+  margin: 18px auto 0;
+  max-width: 520px;
+  color: var(--maintenance-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 576px) {
+  .maintenance-card {
+    padding: 36px 22px;
+    border-radius: 22px;
+  }
+
+  .maintenance-logo {
+    max-height: 96px;
+    margin-bottom: 18px;
+  }
+}
