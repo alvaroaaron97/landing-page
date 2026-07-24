@@ -343,6 +343,7 @@
   opacity: 0.95;
 }
 
+
 /* Per-card color accents for h3 text and accent bar variations */
 .about-card.mission::before { background: linear-gradient(90deg, rgba(6,160,170,0.95), rgba(16,160,120,0.95)); }
 .about-card.vision::before  { background: linear-gradient(90deg, rgba(60,120,200,0.95), rgba(80,75,180,0.95)); }

@@ -15,6 +15,7 @@ function App() {
       <NavBar />
       <Carousel />
 
+
       <div className="container my-5">
         <ProjectCards />
       </div>
