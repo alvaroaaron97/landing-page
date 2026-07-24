@@ -1,4 +1,3 @@
-
 import React from 'react';
 import '../styles/Footer.css';
 import logoStanm from '../assets/logo-stanm.png';
@@ -19,7 +18,7 @@ export default function Footer() {
         <nav className="footer-col footer-links" aria-label="Links rápidos">
           <h4>Links rápidos</h4>
           <ul>
-            <li><a href="#">Inicio</a></li>
+            <li><a href="#inicio">Inicio</a></li>
             <li><a href="#quienes-somos">Sobre Nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
